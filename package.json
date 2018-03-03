@@ -1,0 +1,23 @@
+{
+  "name": "hacktech",
+  "version": "1.0.0",
+  "description": "test bot for hacktech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shermandong1/suggestions-for-messenger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shermandong1/suggestions-for-messenger/issues"
+  },
+  "homepage": "https://github.com/shermandong1/suggestions-for-messenger#readme",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "restify": "^6.3.4"
+  }
+}
