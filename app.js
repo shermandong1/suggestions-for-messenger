@@ -21,5 +21,24 @@ var bot = new builder.UniversalBot(connector, function (session) {
     session.send("You said: %s", session.message.text);
 });
 
-app.post('/webhook', 'green');
-app.get('/webhook', 'blue');
+var http = require('http');
+var querystring = require('querystring');
+
+var server1 = http.createServer().listen(3000);
+
+server1.on('request', function (req, res) {
+    if (req.method == 'POST') {
+        var body = '';
+    }
+
+    req.on('data', function (data) {
+        body += data;
+    });
+
+    req.on('end', function () {
+        var post = querystring.parse(body);
+        console.log(post);
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.end('Hello World\n');
+    });
+});
