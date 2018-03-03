@@ -27,7 +27,7 @@ var querystring = require('querystring');
 var server1 = http.createServer().listen(3000);
 
 server1.on('request', function (req, res) {
-    if (req.method == 'POST') {
+    if (req.method == 'GET') {
         var body = '';
     }
 
