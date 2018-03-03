@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "engines": {
     "node": ">7.10.1",
-    "npm": "4.2.0"
+    "npm": "8.9.4"
   },
   "description": "Design best practices demo for Chat Extensions on the Messenger Platform.",
   "author": "Facebook Inc.",
