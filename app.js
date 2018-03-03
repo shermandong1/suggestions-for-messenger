@@ -41,7 +41,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 
 // Adds support for GET requests to our webhook
-app.get('/webhook', (req, res) => {
+server.get('/webhook', (req, res) => {
 
   // Your verify token. Should be a random string.
   let VERIFY_TOKEN = "<YOUR_VERIFY_TOKEN>"
@@ -69,7 +69,7 @@ app.get('/webhook', (req, res) => {
 });
 
 // Creates the endpoint for our webhook
-app.post('/webhook', (req, res) => {
+server.post('/webhook', (req, res) => {
 
   let body = req.body;
 
