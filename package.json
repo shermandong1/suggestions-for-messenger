@@ -10,5 +10,18 @@
     },
     "scripts": {
         "start": "node index.js"
-    }
+    },
+    "dependencies": {
+        "babel-preset-react": "^6.24.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1"
+    },
+    "presets": [
+        "env",
+        "react"
+    ]
 }
