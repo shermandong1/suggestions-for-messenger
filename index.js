@@ -2,6 +2,8 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
+//require("babel-core").transform("code", options);
+
 var server = http.createServer(function (request, response) {
     console.log('request starting...');
 
